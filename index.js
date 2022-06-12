@@ -1,7 +1,9 @@
-function fn(...c) {
-  if (!cat.every((a) => Number.isNumber(a)))
+
+function fn(...call) {
+  if (!call.every((a) => Number.isNumber(a)))
     throw 'All arguments must be numbers.';
-  return cat.reduce((a, b) => a + b);
+  return call.reduce((a, b) => a + b);
+
 }
 
 fn(1, 2, 3); //> 6
